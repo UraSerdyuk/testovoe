@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+/*
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Source Code Pro', monospace;
+*/
+body {
+    font-size: 16px;
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.container {
+    width: 100%;
+    background: #f6f6f6;
+}
+.title {
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 24pt;
+    color: rgba(40, 40, 40, 255);
+    text-align: left;
+    margin:30px 0 35px 130px;
+}
+.header-img {
+    width: 100%;
+    padding-bottom: 30px;
+}
+.id-title {
+    font-family: ﻿OpenSans,sans-serif;
+    font-size: 9pt;
+    color: #989aa0;
+    text-align: left;
+    padding-bottom: 30px;
+}
+.information {
+    width: 80%;
+    margin: auto;
+}
+.price {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 140px;
+    padding-bottom: 20px;
+}
+.old-price {
+     font-family: 'Source Code Pro', monospace;
+     color: rgba(44, 48, 61, 255);
+     text-align: left;
+     font-weight: bold;
+     font-size: 80px;
+    text-decoration: line-through;
+
+ }
+.new-price {
+    font-family: 'Source Code Pro', monospace;
+    color: #ce2c52;
+    text-align: left;
+    font-weight: bold;
+    font-size: 80px;
+}
+.stars  {
+    display: flex;
+    padding-bottom: 50px;
+}
+.stars img {
+    width: 50px;
+    height: 50px;
+}
+.social-link {
+    display: flex;
+    margin-bottom: 30px;
+}
+.social-link a {
+    width: 90px;
+    height: 90px;
+    border: 5px solid #2c87ce;
+    border-radius: 50px;
+    display: block;
+    margin-left: 40px;
+}
+.social-link a:nth-child(1) {
+    margin-left: 0;
+}
+.fab {
+    font-family: "Font Awesome 5 Brands";
+    font-size: 45px;
+    color: #2c87ce;
+    padding-left: 20px;
+    line-height: 80px;
+}
+.fabb {
+    padding-left: 27px;
+}
+.social-text {
+    font-family: ﻿OpenSans, ﻿ProximaNovaCond-Light, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+    font-size: 14pt;
+    color: rgba(40, 40, 40, 255);
+    text-align: left;
+    margin-bottom: 30px;
+}
+.select {
+    font-family: ﻿OpenSans-Bold, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+    font-size: 16pt;
+    color: rgba(44, 48, 61, 255);
+    text-align: left;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.ul-size {
+    display: flex;
+    margin-bottom: 20px;
+}
+.ul-size li {
+    display: block;
+    width: 100px;
+    height: 100px;
+    border: 2px solid #989aa0;
+    border-radius: 100px;
+    text-align: center;
+    background: #fff;
+    margin-left: 22px;
+    font-size: 55px;
+    line-height: 80px;
+}
+.ul-size li:hover {
+    -webkit-box-shadow: -1px 2px 40px -1px rgba(0,0,0,0.5);
+    -moz-box-shadow: -1px 2px 40px -1px rgba(0,0,0,0.5);
+    box-shadow: -1px 2px 40px -1px rgba(0,0,0,0.5);
+
+}
+.ul-size li:nth-child(1) {
+    margin: 0;
+}
+.ul-color {
+    display: flex;
+}
+.ul-color li {
+    display: block;
+    width: 100px;
+    height: 100px;
+    border: 2px solid #989aa0;
+    border-radius: 100px;
+    margin-left: 22px;
+}
+.ul-color li:hover {
+    -webkit-box-shadow: -1px 2px 40px -1px rgba(0,0,0,0.5);
+    -moz-box-shadow: -1px 2px 40px -1px rgba(0,0,0,0.5);
+    box-shadow: -1px 2px 40px -1px rgba(0,0,0,0.5);
+
+}
+.ul-color li:nth-child(1) {
+    margin: 0;
+    background: #77d8e7;
+}
+.ul-color li:nth-child(2) {
+    background: #96c795;
+}
+.ul-color li:nth-child(3) {
+    background: #ce92a1;
+}
+.ul-color li:nth-child(4) {
+    background: #aa93cf;
+}
+.button {
+    display: block;
+    margin: auto;
+    width: 660px;
+    height: 130px;
+    background: #8ae6cf;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    border-radius: 70px;
+    border: none;
+    font-size: 45px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: rgba(44, 48, 61, 255);
+}
+.gallery h1 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+.gallery h3 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.gallery-img2, .gallery-img3, .gallery-img4, .gallery-img5, .gallery-img6 {
+    display: none;
+}
