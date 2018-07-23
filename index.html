@@ -1,46 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="css/style.css">
 
+
 </head>
 <body>
          <div class="container">
-                 <div class="header">
-                     <h1 class="title">For gamers by gamers <br> TEE</h1>
+             <h1 class="title">For gamers by gamers  <span class="header-title-span">TEE</span></h1>
+                 <section class="header">
+
                      <div class="header-item">
                          <picture>
-                             <source media="(min-width:480px)" srcset="img/imgMain.png 480w">
+                             <source media="(min-width:1024px)" srcset="img/1024.png 1024w">
+                             <source media="(min-width:768px)" srcset="img/768.png 768w">
+                             <source media="(min-width:480px)" srcset="img/480.png 480w">
                              <img src="img/imgMain.png" alt="qwe" class="header-img">
                          </picture>
                      </div>
                      <div class="information">
+                         <h1 class="title-sub">For gamers by gamers  <span class="header-title-span">TEE</span></h1>
                          <p class="id-title">Item #: 701642853695</p>
                          <div class="price">
                              <p class="old-price">$29.50</p>
                              <p class="new-price">$19.99</p>
                          </div>
+
                          <div class="stars">
                              <img src="./img/starRed.png" alt="star">
                              <img src="./img/starRed.png" alt="star">
                              <img src="./img/starRed.png" alt="star">
                              <img src="./img/starRed.png" alt="star">
                              <img src="./img/starGrey.png" alt="star">
+
+                             <p class="star-link" onclick="Block()"  >Share it!
+                                    <p class="star-social-link" id="actived">
+                             <img src="./img/close@1X.png" class="close" alt="close" id="closed" onclick="Hide()">
+                         </p>
+                             </p>
                          </div>
-                         <div class="social-link">
+                         <div class="social-link" id="link">
                              <a href="#"><i class="fab fabb fa-facebook-f 2x"></i></a>
                              <a href="#"><i class="fab fa-twitter"></i></a>
                              <a href="#"><i class="fab fa-pinterest-p"></i></a>
                              <a href="#"><i class="fab fa-youtube-square"></i></a>
                          </div>
+                         <p class="social-title">DETAILS:</p>
                          <p class="social-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus autem hic illo molestias perferendis similique unde. A adipisci, aspernatur exercitationem fugiat incidunt iste laudantium quae quos sequi tempora voluptate?</p>
                          <div class="size">
-                             <p class="select">SELECT A SIzE:</p>
+                             <p class="select"><span class="hiden-color">SELECT A </span>SIzE:</p>
                              <ul class="ul-size">
                                  <li>xs</li>
                                  <li>s</li>
@@ -48,7 +62,7 @@
                              </ul>
                          </div>
                          <div class="color">
-                             <p class="select ">SELECT a color: </p>
+                             <p class="select "> <span class="hiden-color">SELECT a </span>color: </p>
                              <ul class="ul-color">
                                  <li></li>
                                  <li></li>
@@ -58,39 +72,67 @@
                                  <Button class="button"> add to cart</Button>
                          </div>
                      </div>
-                  </div>
+                  </section>
 
-
-
-
-
-                 <div class="gallery">
+                 <section class="gallery">
                      <h1 >YOU MAY ALSO LIKE</h1>
-                    <div class="gallery-img1">
-                        <img src="./img/img1.png" alt="img">
-                        <h3>For gamers by gamers TEE</h3>
-                    </div>
-                     <div class="gallery-img2" >
-                         <img src="./img/img2.png" alt="img">
-                         <h3>PRO gamer SLASH HOODIE</h3>
-                     </div>
-                     <div class="gallery-img3">
-                         <img src="./img/img3.png" alt="img">
-                         <h3>spectroom GAMER TEE</h3>
-                     </div>
-                     <div class="gallery-img4">
-                         <img src="./img/img4.png" alt="img">
-                         <h3>GAMING FOR GOOD TEE</h3>
-                     </div>
-                     <div class="gallery-img5">
-                         <img src="./img/img5.png" alt="img">
-                         <h3>GAMING FOR GOOD TEE</h3>
-                     </div>
-                     <div class="gallery-img6">
-                         <img src="./img/img6.png" alt="img">
-                         <h3>GAMING FOR GOOD TEE</h3>
-                     </div>
-                 </div>
+                     <ul class="gallery-item">
+                         <li  class="gallery-img1">
+                             <div class="gallery-img-list">
+                                 <i class="fa left fa-angle-left"></i>
+                                 <div class="gallery-img-post">
+                                     <img src="./img/img1.png" alt="img">
+                                     <p class="img-prise img-prise-oldd"><span class="img-prise-old">22.29</span> $19.99</p>
+                                 </div>
+                                 <i class="fa right fa-angle-right"></i>
+                                 <h3>For gamers by gamers TEE</h3>
+                             </div>
+                         </li>
+                         <li class="gallery-img2">
+                                 <div class="gallery-img-post">
+                                     <img src="./img/img2.png" alt="img">
+                                     <p class="img-prise img-color">$49.99</p>
+                                 </div>
+                                 <h3>PRO gamer SLASH HOODIE</h3>
+                         </li>
+                         <li class="gallery-img3">
+                                 <div class="gallery-img-post">
+                                     <img src="./img/img3.png" alt="img">
+                                     <p class="img-prise img-color">$24.99</p>
+                                 </div>
+                                 <h3>spectroom GAMER TEE</h3>
+                         </li>
+                         <li class="gallery-img4">
+                                 <div class="gallery-img-post">
+                                     <img src="./img/img4.png" alt="img" >
+                                     <p class="img-prise img-prise-oldd" ><span class="img-prise-old">22.29</span> $19.99</p>
+                                 </div>
+                                 <h3>GAMING FOR GOOD TEE</h3>
+                         </li>
+                         <li class="gallery-img5">
+                                 <div class="gallery-img-post">
+                                     <img src="./img/img5.png" alt="img">
+                                     <p class="img-prise img-color">$60.00</p>
+                                 </div>
+                                 <h3>GAMING FOR GOOD TEE</h3>
+                         </li>
+                         <li class="gallery-img6">
+                                 <div class="gallery-img-post">
+                                     <img src="./img/img6.png" alt="img">
+                                     <p class="img-prise img-color">$54.00</p>
+                                 </div>
+                                 <h3>GAMING FOR GOOD TEE</h3>
+                         </li>
+                     </ul>
+
+
+
+
+
+
+
+                 </section>
          </div>
+         <script src="js/index.js"></script>
 </body>
 </html>
