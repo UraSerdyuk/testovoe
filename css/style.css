@@ -279,6 +279,7 @@ a {
     font-size: 40px;
     color: #949494;
     position: relative;
+    z-index: 100;
 }
 .right {
     top: -190px;
@@ -289,6 +290,20 @@ a {
 }
 .star-link ,.img-prise-old {
     display: none;
+}
+.arrow {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 190px;
+    right: 385px;
+    transform: rotate(45deg);
+    background-color: #fff;
+    display: none;
+    z-index: 10;
+    border-top: 2px solid #d1d1d1;
+    border-left: 2px solid  #d1d1d1;
+
 }
 
 /*
@@ -501,6 +516,9 @@ a {
         right: 242px;
         opacity: 1;
         transition: opacity .3s;
+        -webkit-box-shadow: -2px 2px 23px 1px rgba(0,0,0,0.75);
+        -moz-box-shadow: -2px 2px 23px 1px rgba(0,0,0,0.75);
+        box-shadow: -2px 2px 23px 1px rgba(0,0,0,0.75);
     }
     .social-link {
         flex-direction: row;
