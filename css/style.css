@@ -28,6 +28,7 @@ a {
     display: none;
 }
 .container {
+    min-width: 480px;
     width: 100%;
     background: #f6f6f6;
 }
